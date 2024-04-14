@@ -1,4 +1,5 @@
 # Week2/Ch3 Exercises/program6.py
+
 # Approximate π using Leibniz's formula
 
 # Get number of iterations from the user, store it in a variable

@@ -1,3 +1,5 @@
+# Week2/Ch3 Exercises/program1.py
+
 # Get lengths of three sides of a triangle from the user
 side_a = float(input("Enter the length of side A: "))
 side_b = float(input("Enter the length of side B: "))
