@@ -18,10 +18,8 @@ def caesar_cipher(line, distance):
         # Convert char to ASCII
         ascii_char = ord(char)
         # Shift ASCII
-        if ascii_char >= 65 and ascii_char <= 90:  # Uppercase
-            ascii_char = (ascii_char - 65 + distance) % 26 + 65
-        elif ascii_char >= 97 and ascii_char <= 122:  # Lowercase
-            ascii_char = (ascii_char - 97 + distance) % 26 + 97
+        if 32 <= ascii_char <= 126:  # All printable ASCII characters
+            ascii_char = (ascii_char - 32 + distance) % 95 + 32
         # Convert back to char
         encrypted += chr(ascii_char)
     return encrypted
@@ -30,4 +28,4 @@ def caesar_cipher(line, distance):
 if __name__ == "__main__":
     line = input("Enter a line of plaintext: ")
     distance = int(input("Enter the distance: "))
-    print("Encrypted: ", caesar_cipher(line, distance))
+    print("Encrypted:", caesar_cipher(line, distance))
