@@ -1,4 +1,4 @@
-# Week3/Ch3 Exercises/program7.py
+# Week2/Ch3 Exercises/program7.py
 
 # Define a function to calculate the salary schedule
 def calculate_salary_schedule(starting_salary, increase_percent, num_years):
