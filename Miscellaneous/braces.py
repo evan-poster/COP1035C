@@ -45,7 +45,8 @@ def checkBraces(string, clean=False):
                 new_string.append(char)
         return checkBraces(new_string, True)
 
-
+# Reworked to not check for extra characters and uses strings instead of lists
+# Probably doesn't work. Didn't need to check for class.
 def checkBraces_unsafe(string):
     if len(string) % 2 > 0:
         return False
