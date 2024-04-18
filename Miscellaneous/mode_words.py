@@ -4,9 +4,9 @@ file = "thousand_words.txt"
 
 def main():
     '''
-        Given a string, identify the words with the highest frequency
+        Given a file/text, identify the words with the highest frequency
     '''
-    # Import file for reading
+    # Open file for reading
     with open(file, "r") as f:
         contents = f.read().split()
         # Count each word when it appears
