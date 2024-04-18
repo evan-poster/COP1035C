@@ -1,0 +1,60 @@
+Source: https://www.cs.usfca.edu/~cruse/cs210s05/leapyear.bob
+
+Date: Mon, 9 Feb 1998 
+To: cruse@usfca.edu
+From: Robert Alan Wolf <wolfr@usfca.edu>
+Subject: leap years
+
+       For the old calendar, the Julian, in use until recent centuries, the
+rule was simply "years divisible by 4, and only such years, are leap years."
+However, this made the average length of the calendar-year slightly longer
+than the solar-year (I'm not sure if the latter term is the right one to use
+here, but you know what I mean); in other words, under the Julian system,
+too many years were being designated as leap years.  And by the late 16th
+century, the calendar was reading 10 days behind what it should have; e.g.,
+maybe the calendar was reading March 4 when the actual position of the earth
+in its orbit about the sun would have called for March 14.
+
+        In papal countries, after skipping 10 days in October 1582 to get
+back on track (i.e., the day after Oct. 4, 1582 was decreed to be Oct. 15,
+as I recollect), the Gregorian calendar thinned out the leap years a bit, in
+order to produce a shorter calendar year on average, one that kept up with
+the earth's movement about the sun.  (Protestant countries adopted the new
+calendar only somewhat later, by the way.  Apparently a lot of people grumbled
+about losing 10 days' pay and such.)  
+
+        Oct. 15 seems like a day we should perhaps celebrate as Gregorian 
+Calendar Day, being the birthday of this wonderful calendar.  After all, it 
+works so well that we never stop to appreciate our good fortune in having so 
+accurate a calendar.  Its rules are
+
+		1) years divisible by 400 ARE leap years (so, for example, 
+2000 will indeed be a leap year),
+
+		2) years divisible by 100 but not by 400 are NOT leap years 
+(so, for example, 1700, 1800, and 1900 were NOT leap years, NOR will 2100 be 
+a leap year),
+
+     		3) years divisible by 4 but not by 100 ARE leap years 
+(e.g., 1988, 1992, 1996),
+
+     		4) years not divisible by 4 are NOT leap years.
+
+The only difference, then, between the Julian system and the Gregorian
+system (besides the 10-day catchup) is that in the latter system, century
+years like 1700, 1800, 1900 are NOT leap years.  (In both calendars, the
+extra day in a leap year is always February 29, by the way.
+
+        The Gregorian calendar keeps excellent time, but it could even
+better (i.e., very, very excellent) if years like 4000, 8000, etc., were NOT
+leap years.  Therefore, it has been proposed that the rules be changed to
+
+                0) years divisible by 4000 are NOT leap years,
+
+                1') years divisible by 400 but not by 4000 ARE leap years
+(so, for example, 2000 will still be a leap year),
+
+                2), 3), and 4) as above.
+
+We have a long, long time to decide on this possible change.  Whatever the
+ultimate decision, let's hope we don't have a "year 4000 problem"!!!
