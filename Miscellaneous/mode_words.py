@@ -4,7 +4,7 @@ file = "thousand_words.txt"
 
 def main():
     '''
-        Given a file/text, identify the words with the highest frequency
+        Given a file/text, identify the word(s) with the highest frequency
     '''
     # Open file for reading
     with open(file, "r") as f:
