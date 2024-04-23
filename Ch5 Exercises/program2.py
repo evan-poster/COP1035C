@@ -1,6 +1,8 @@
+# ipsum.txt provided for testing
+# Verify correct path!
 filename = input("Enter the filename: ")
 
-with open(filename, 'r') as file:
+with open(filename) as file:
     lines = file.readlines()
 
 while True:
