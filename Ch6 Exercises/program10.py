@@ -1,4 +1,5 @@
-def myRange(start=None, stop=None):
+
+def myRange(start, stop=None, step=1):
     """
     Return a list of integers from start to stop.
 
@@ -9,27 +10,39 @@ def myRange(start=None, stop=None):
     Returns:
         list: A list of integers from start to stop.
     """
-    result = []
-
-    if start is None and stop is None:
-        raise ValueError("Invalid parameters")
-    elif start is None:
-        start = 0
-
     if stop is None:
         stop = start
         start = 0
 
-    if start <= stop:
-        for i in range(start, stop+1):
-            result.append(i)
-    else:
-        for i in range(start, stop-1, -1):
-            result.append(i)
+    # Check for errors
+    if step == 0:
+        return 'Step cannot be zero'
+    
+    if stop < start and step > 0:
+        return 'Stop must be greater than start when step is positive'
+    
+    if stop > start and step < 0:
+        return 'Stop must be less than start when step is negative'
+    
 
+    # Create an empty list without the range() function
+    result = []
+    if step > 0:
+        while start < stop:
+            result.append(start)
+            start += step
+    else:
+        while start > stop:
+            result.append(start)
+            start += step
     return result
 
+
 # Test the myRange function
-print(myRange(5))  # [0, 1, 2, 3, 4, 5]
-print(myRange(0, 5))  # [0, 1, 2, 3, 4, 5]
-print(myRange(5, 0))  # [5, 4, 3, 2, 1, 0]
+print(myRange(5))
+print(myRange(0, 5))
+print(myRange(5, 0))
+print(myRange(5, 0, -1))
+print(myRange(0, 5, -1))
+print(myRange(10, 0, -2))
+print(myRange(0, 10, 3))
